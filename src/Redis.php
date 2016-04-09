@@ -1,5 +1,7 @@
 <?php
 
+namespace WyriHaximus\React\ChildProcess\Pool\Queue;
+
 use Clue\React\Redis\Client;
 use React\Promise\PromiseInterface;
 use WyriHaximus\React\ChildProcess\Messenger\Messages\Rpc;
