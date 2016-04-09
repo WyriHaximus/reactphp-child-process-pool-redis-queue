@@ -4,6 +4,7 @@ namespace WyriHaximus\React\ChildProcess\Pool\Queue;
 
 use Clue\React\Redis\Client;
 use React\Promise\PromiseInterface;
+use WyriHaximus\React\ChildProcess\Messenger\Messages\Factory;
 use WyriHaximus\React\ChildProcess\Messenger\Messages\Rpc;
 use WyriHaximus\React\ChildProcess\Pool\QueueInterface;
 
@@ -40,7 +41,7 @@ class Redis implements QueueInterface
      */
     public function enqueue(Rpc $rpc)
     {
-        $this->redis->lpush($this->key, serialize($rpc))->always(function () {
+        $this->redis->lpush($this->key, json_encode($rpc))->always(function () {
             $this->updatedLength();
         });
     }
@@ -50,7 +51,9 @@ class Redis implements QueueInterface
      */
     public function dequeue()
     {
-        return $this->redis->lpop($this->key)->always(function () {
+        return $this->redis->lpop($this->key)->then(function ($rpc) {
+            return \React\Promise\resolve(Factory::fromLine($rpc, []));
+        })->always(function () {
             $this->updatedLength();
         });
     }
