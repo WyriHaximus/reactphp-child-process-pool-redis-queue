@@ -31,5 +31,10 @@
         "classmap": [
             "vendor/wyrihaximus/react-child-process-pool/tests/"
         ]
+    },
+    "config": {
+        "platform": {
+            "php": 5.4
+        }
     }
 }
