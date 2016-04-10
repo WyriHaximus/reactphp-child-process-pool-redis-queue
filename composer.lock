@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f52eda770a81c1ce28bcf75d8d93d423",
-    "content-hash": "3233a69d955a17e353bb2defe5067ae5",
+    "hash": "9e25c4d1c502dcc31cda50dba8ec5d94",
+    "content-hash": "b0f4e7060eb768292bb71db417b69c7c",
     "packages": [
         {
             "name": "clue/redis-protocol",
@@ -745,16 +745,16 @@
         },
         {
             "name": "wyrihaximus/react-child-process-pool",
-            "version": "dev-master",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/reactphp-child-process-pool.git",
-                "reference": "295835cb47f22a638a1f2680dc220f424c57b2b9"
+                "reference": "285177394cb557620f11c383db61be2a6429a313"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-child-process-pool/zipball/295835cb47f22a638a1f2680dc220f424c57b2b9",
-                "reference": "295835cb47f22a638a1f2680dc220f424c57b2b9",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-child-process-pool/zipball/285177394cb557620f11c383db61be2a6429a313",
+                "reference": "285177394cb557620f11c383db61be2a6429a313",
                 "shasum": ""
             },
             "require": {
@@ -790,7 +790,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2016-04-09 21:27:30"
+            "time": "2016-04-10 08:07:48"
         },
         {
             "name": "wyrihaximus/react-child-process-promise",
@@ -2129,9 +2129,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "wyrihaximus/react-child-process-pool": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

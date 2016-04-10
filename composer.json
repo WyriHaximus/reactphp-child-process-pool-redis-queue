@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": "^5.4||^7.0",
-        "wyrihaximus/react-child-process-pool": "dev-master",
+        "wyrihaximus/react-child-process-pool": "^1.4",
         "clue/redis-react": "^0.5.1"
     },
     "require-dev": {
