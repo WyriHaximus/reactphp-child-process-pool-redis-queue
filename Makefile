@@ -1,6 +1,6 @@
 all: cs dunit unit
 travis: cs unit-travis
-travis-after-script: travis-coverage
+travis-after-script: travis-coverage example
 contrib: cs dunit unit
 
 init:
@@ -21,5 +21,5 @@ dunit: init
 travis-coverage: init
 	if [ -f ./build/logs/clover.xml ]; then wget https://scrutinizer-ci.com/ocular.phar && php ocular.phar code-coverage:upload --format=php-clover ./build/logs/clover.xml; fi
 
-benchmark: init
-	php benchmark/memory.php
+example: init
+	php examples/basic.php
