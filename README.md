@@ -3,7 +3,7 @@
 [![Linux Build Status](https://travis-ci.org/WyriHaximus/reactphp-child-process-pool-redis-queue.png)](https://travis-ci.org/WyriHaximus/reactphp-child-process-pool-redis-queue)
 [![Latest Stable Version](https://poser.pugx.org/WyriHaximus/react-child-process-pool-redis-queue/v/stable.png)](https://packagist.org/packages/WyriHaximus/react-child-process-pool-redis-queue)
 [![Total Downloads](https://poser.pugx.org/wyrihaximus/react-child-process-pool-redis-queue/downloads.png)](https://packagist.org/packages/wyrihaximus/react-child-process-pool-redis-queue)
-[![Code Coverage](https://scrutinizer-ci.com/g/WyriHaximus/react-child-process-pool-redis-queue/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-child-process-pool-redis-queue/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-child-process-pool-redis-queue/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-child-process-pool-redis-queue/?branch=master)
 [![License](https://poser.pugx.org/wyrihaximus/react-child-process-pool-redis-queue/license.png)](https://packagist.org/packages/wyrihaximus/react-child-process-pool-redis-queue)
 [![PHP 7 ready](http://php7ready.timesplinter.ch/WyriHaximus/reactphp-child-process-pool-redis-queue/badge.svg)](https://travis-ci.org/WyriHaximus/reactphp-child-process-pool-redis-queue)
 
