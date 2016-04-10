@@ -22,7 +22,7 @@ $loop = LoopFactory::create();
 $factory = new Factory($loop);
 $factory->createClient()->then(
     function (Client $client) {
-        Flexible::createFromClass('WyriHaximus\React\ChildProcess\Messenger\ReturnChild', $loop, [
+        Flexible::createFromClass(ReturnChild::class, $loop, [
             Options::QUEUE => new Redis($client, 'pool:queue'),
         ]);
     }
