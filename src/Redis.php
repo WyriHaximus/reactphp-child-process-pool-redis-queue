@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace WyriHaximus\React\ChildProcess\Pool\Queue;
 
@@ -72,6 +72,7 @@ class Redis implements QueueInterface
     {
         return $this->redis->llen($this->key)->then(function ($length) {
             $this->length = $length;
+
             return new FulfilledPromise();
         });
     }

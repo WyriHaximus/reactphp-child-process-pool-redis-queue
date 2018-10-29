@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace WyriHaximus\React\Tests\ChildProcess\Pool\Queue;
 
@@ -17,6 +17,7 @@ class FakeRedis implements Client
         switch ($name) {
             case 'lpush':
                 array_push($this->queue, $args[1]);
+
                 return new FulfilledPromise();
                 break;
             case 'lpop':

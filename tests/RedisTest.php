@@ -1,13 +1,26 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace WyriHaximus\React\Tests\ChildProcess\Pool\Queue;
 
+use ApiClients\Tools\TestUtilities\TestCase;
+use WyriHaximus\CpuCoreDetector\Resolver;
 use WyriHaximus\React\ChildProcess\Pool\Queue\Redis;
-use WyriHaximus\React\Tests\ChildProcess\Pool\TestCase;
 
-class RedisTest extends TestCase
+final class RedisTest extends TestCase
 {
     use QueueTestTrait;
+
+    public function setUp()
+    {
+        parent::setUp();
+        Resolver::reset();
+    }
+
+    public function tearDown()
+    {
+        parent::tearDown();
+        Resolver::reset();
+    }
 
     protected function getQueue()
     {
