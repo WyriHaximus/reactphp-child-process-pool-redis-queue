@@ -6,17 +6,20 @@ use ApiClients\Tools\TestUtilities\TestCase;
 use WyriHaximus\CpuCoreDetector\Resolver;
 use WyriHaximus\React\ChildProcess\Pool\Queue\Redis;
 
+/**
+ * @internal
+ */
 final class RedisTest extends TestCase
 {
     use QueueTestTrait;
 
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         Resolver::reset();
     }
 
-    public function tearDown()
+    protected function tearDown(): void
     {
         parent::tearDown();
         Resolver::reset();

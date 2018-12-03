@@ -1,5 +1,6 @@
 {
     "name": "wyrihaximus/react-child-process-pool-redis-queue",
+    "description": "Put your Child Process Pool queue in Redis",
     "license": "MIT",
     "authors": [
         {

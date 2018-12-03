@@ -43,7 +43,7 @@ class Redis implements QueueInterface
      */
     public function enqueue(Rpc $rpc)
     {
-        return $this->redis->lpush($this->key, json_encode($rpc))->always(function () {
+        return $this->redis->lpush($this->key, \json_encode($rpc))->always(function () {
             return $this->updatedLength();
         });
     }

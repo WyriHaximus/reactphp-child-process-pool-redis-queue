@@ -1,6 +1,6 @@
-<?php
+<?php declare(strict_types=1);
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require \dirname(__DIR__) . '/vendor/autoload.php';
 
 use Clue\React\Redis\Client;
 use Clue\React\Redis\Factory;
@@ -11,18 +11,19 @@ use WyriHaximus\React\ChildProcess\Pool\Queue\Redis;
 $loop = LoopFactory::create();
 $factory = new Factory($loop);
 $factory->createClient()->then(
-    function (Client $client) {
+    function (Client $client): void {
         $queue = new Redis($client, 'pool:queue');
         echo 'Count: ', $queue->count(), PHP_EOL;
         $queue->enqueue(MessageFactory::rpc('a', ['b']))->then(function () use ($queue) {
             echo 'Count: ', $queue->count(), PHP_EOL;
+
             return $queue->dequeue();
-        })->always(function () use ($queue, $client) {
+        })->always(function () use ($queue, $client): void {
             echo 'Count: ', $queue->count(), PHP_EOL;
             $client->close();
         });
     },
-    function (Exception $e) {
+    function (Exception $e): void {
         echo $e->getMessage(), PHP_EOL;
     }
 );
