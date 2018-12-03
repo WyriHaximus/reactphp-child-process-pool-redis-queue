@@ -1,4 +1,4 @@
-# reactphp-child-process-pool-redis-queue
+# Put your Child Process Pool queue in Redis
 
 [![Linux Build Status](https://travis-ci.org/WyriHaximus/reactphp-child-process-pool-redis-queue.png)](https://travis-ci.org/WyriHaximus/reactphp-child-process-pool-redis-queue)
 [![Latest Stable Version](https://poser.pugx.org/WyriHaximus/react-child-process-pool-redis-queue/v/stable.png)](https://packagist.org/packages/WyriHaximus/react-child-process-pool-redis-queue)
