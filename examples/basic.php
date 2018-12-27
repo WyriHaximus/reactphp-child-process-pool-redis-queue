@@ -13,18 +13,18 @@ $factory = new Factory($loop);
 $factory->createClient()->then(
     function (Client $client): void {
         $queue = new Redis($client, 'pool:queue');
-        echo 'Count: ', $queue->count(), PHP_EOL;
+        echo 'Count: ', $queue->count(), \PHP_EOL;
         $queue->enqueue(MessageFactory::rpc('a', ['b']))->then(function () use ($queue) {
-            echo 'Count: ', $queue->count(), PHP_EOL;
+            echo 'Count: ', $queue->count(), \PHP_EOL;
 
             return $queue->dequeue();
         })->always(function () use ($queue, $client): void {
-            echo 'Count: ', $queue->count(), PHP_EOL;
+            echo 'Count: ', $queue->count(), \PHP_EOL;
             $client->close();
         });
     },
     function (Exception $e): void {
-        echo $e->getMessage(), PHP_EOL;
+        echo $e->getMessage(), \PHP_EOL;
     }
 );
 
