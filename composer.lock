@@ -155,29 +155,30 @@
         },
         {
             "name": "clue/redis-react",
-            "version": "v2.2.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/clue/reactphp-redis.git",
-                "reference": "e2332a09f74d6cb5fb89acdeae49a0b6ef4407ab"
+                "reference": "426e9dfd71e7ffa20de080a725589ff9b42762ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clue/reactphp-redis/zipball/e2332a09f74d6cb5fb89acdeae49a0b6ef4407ab",
-                "reference": "e2332a09f74d6cb5fb89acdeae49a0b6ef4407ab",
+                "url": "https://api.github.com/repos/clue/reactphp-redis/zipball/426e9dfd71e7ffa20de080a725589ff9b42762ca",
+                "reference": "426e9dfd71e7ffa20de080a725589ff9b42762ca",
                 "shasum": ""
             },
             "require": {
                 "clue/redis-protocol": "0.3.*",
                 "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
                 "php": ">=5.3",
-                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
+                "react/event-loop": "^1.0 || ^0.5",
                 "react/promise": "^2.0 || ^1.1",
-                "react/socket": "^1.0 || ^0.8.3"
+                "react/promise-timer": "^1.5",
+                "react/socket": "^1.1"
             },
             "require-dev": {
                 "clue/block-react": "^1.1",
-                "phpunit/phpunit": "^5.0 || ^4.8"
+                "phpunit/phpunit": "^7.0 || ^6.0 || ^5.0 || ^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -195,15 +196,16 @@
                     "email": "christian@lueck.tv"
                 }
             ],
-            "description": "Async Redis client implementation, built on top of ReactPHP",
-            "homepage": "https://github.com/clue/php-redis-react",
+            "description": "Async Redis client implementation, built on top of ReactPHP.",
+            "homepage": "https://github.com/clue/reactphp-redis",
             "keywords": [
                 "async",
                 "client",
+                "database",
                 "reactphp",
                 "redis"
             ],
-            "time": "2018-01-24T11:19:31+00:00"
+            "time": "2019-03-11T10:20:19+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -2800,7 +2802,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🅱 Nette Bootstrap: the simple way to configure and bootstrap your Nette application.",
+            "description": "? Nette Bootstrap: the simple way to configure and bootstrap your Nette application.",
             "homepage": "https://nette.org",
             "keywords": [
                 "bootstrapping",
@@ -2865,7 +2867,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "💎 Nette Dependency Injection Container: Flexible, compiled and full-featured DIC with perfectly usable autowiring and support for all new PHP 7.1 features.",
+            "description": "? Nette Dependency Injection Container: Flexible, compiled and full-featured DIC with perfectly usable autowiring and support for all new PHP 7.1 features.",
             "homepage": "https://nette.org",
             "keywords": [
                 "compiled",
@@ -2930,7 +2932,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🔍 Nette Finder: find files and directories with an intuitive API.",
+            "description": "? Nette Finder: find files and directories with an intuitive API.",
             "homepage": "https://nette.org",
             "keywords": [
                 "filesystem",
@@ -2990,7 +2992,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🍸 Nette NEON: encodes and decodes NEON file format.",
+            "description": "? Nette NEON: encodes and decodes NEON file format.",
             "homepage": "http://ne-on.org",
             "keywords": [
                 "export",
@@ -3053,7 +3055,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🐘 Nette PHP Generator: generates neat PHP code for you. Supports new PHP 7.3 features.",
+            "description": "? Nette PHP Generator: generates neat PHP code for you. Supports new PHP 7.3 features.",
             "homepage": "https://nette.org",
             "keywords": [
                 "code",
@@ -3117,7 +3119,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🍀 Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
+            "description": "? Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
             "homepage": "https://nette.org",
             "keywords": [
                 "autoload",
@@ -3190,7 +3192,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🛠 Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "description": "? Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
             "homepage": "https://nette.org",
             "keywords": [
                 "array",
@@ -6544,7 +6546,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "description": "🌯 PHPStan rules wrapper",
+            "description": "? PHPStan rules wrapper",
             "time": "2019-03-16T14:53:23+00:00"
         },
         {
